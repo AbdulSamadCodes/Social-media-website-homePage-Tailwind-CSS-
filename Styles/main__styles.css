@@ -1,0 +1,24 @@
+/* general styles */
+.wrapper-container {
+  max-width: var(--wrapper-container-maxwidth);
+  padding: var(--wrapper-container-padding);
+}
+
+/* header */
+.header {
+  background-color: var(--clr-white);
+}
+
+.logo {
+  color: var(--clr-logo);
+}
+
+.user-profile {
+  width: 3.5rem;
+  aspect-ratio:1/1;
+}
+
+.header__searchbar::placeholder {
+  font-size:1.2rem;
+}
+

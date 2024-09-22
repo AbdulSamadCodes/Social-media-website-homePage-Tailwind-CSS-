@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responive social media webiste</title>
 
+    <!-- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- tailwind css link -->
     <link rel="stylesheet" href="Styles/output.css" />
 
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- custom css link -->
-      
+    <link rel="stylesheet" href="Styles/global__custom__properties.css" />
+    <link rel="stylesheet" href="Styles/reset.css" />
+    <link rel="stylesheet" href="Styles/reused_styles.css" />
+    <link rel="stylesheet" href="Styles/main__styles.css" />
   </head>
 
   <body>
+    <!-- header -->
+    <header class="header fixed w-full">
+      <div
+        class="wrapper-container flex items-center justify-between me-auto ms-auto"
+      >
+        <div class="logo">
+          <a href="#" class="text-3xl font-bold">nokoSocial</a>
+        </div>
 
+        <div class="header__searchbar-wrapper flex items-center gap-8">
+          <input
+            type="text"
+            placeholder="Search for creators,inspirations & projects"
+            class="header__searchbar"
+          />
+        </div>
+
+        <div class="create-box flex items-center gap-7">
+          <button class="primary-btn create__btn font-semibold">Create</button>
+
+          <div class="user-profile overflow-hidden rounded-full">
+            <img src="images/profile-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
+  
 </html>
