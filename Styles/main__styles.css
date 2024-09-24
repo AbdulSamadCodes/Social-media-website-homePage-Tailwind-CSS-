@@ -9,16 +9,45 @@
   background-color: var(--clr-white);
 }
 
-.logo {
-  color: var(--clr-logo);
-}
-
 .user-profile {
   width: 3.5rem;
-  aspect-ratio:1/1;
+  aspect-ratio: 1/1;
 }
 
 .header__searchbar::placeholder {
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
+.header__searchbar-wrapper {
+  width: var(--header-searchbar-width);
+  background-color: var(--clr-header-searchbar-bg);
+  padding: 0.8rem 0rem 0.8rem 5rem;
+
+  border-radius: 16px;
+  display: none;
+}
+
+.header__searchbar:focus-visible {
+  outline: none;
+}
+
+.search-icon {
+  --left-pos: 15px;
+  --top-pos: 36%;
+
+  left: var(--left-pos);
+  top: var(--top-pos);
+}
+
+/* media queries */
+@media (width > 768px) {
+  .header__searchbar-wrapper {
+    display: block;
+  }
+}
+
+@media (width > 992px) {
+  :root {
+    --header-searchbar-width: 40rem;
+  }
+}

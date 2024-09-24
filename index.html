@@ -16,20 +16,15 @@
     <!-- tailwind css link -->
     <link rel="stylesheet" href="Styles/output.css" />
 
-    <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- iconscout cdn link-->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
     <!-- custom css link -->
     <link rel="stylesheet" href="Styles/global__custom__properties.css" />
     <link rel="stylesheet" href="Styles/reset.css" />
     <link rel="stylesheet" href="Styles/reused_styles.css" />
     <link rel="stylesheet" href="Styles/main__styles.css" />
+    <link rel="stylesheet" href="Styles/custom__utility__classes.css" />
   </head>
 
   <body>
@@ -39,12 +34,13 @@
         class="wrapper-container flex items-center justify-between me-auto ms-auto"
       >
         <div class="logo">
-          <a href="#" class="text-3xl font-bold">nokoSocial</a>
+          <a href="#" class="text-3xl font-bold text-primary">nokoSocial</a>
         </div>
 
-        <div class="header__searchbar-wrapper flex items-center gap-8">
+        <div class="header__searchbar-wrapper gap-10 relative">
+          <span class="absolute search-icon"><i class="uil uil-search"></i></span>  
           <input
-            type="text"
+            type="search"
             placeholder="Search for creators,inspirations & projects"
             class="header__searchbar"
           />
@@ -59,6 +55,8 @@
         </div>
       </div>
     </header>
+
+    
   </body>
   
 </html>
