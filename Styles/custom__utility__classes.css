@@ -5,3 +5,7 @@
 .text-secondary {
   color:var(--clr-text-secondary);
 }
+
+.primary-bg {
+  background-color:var(--clr-primary-bg);
+}

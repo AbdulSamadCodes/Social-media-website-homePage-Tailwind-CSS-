@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="Styles/output.css" />
 
     <!-- iconscout cdn link-->
-   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="Styles/global__custom__properties.css" />
@@ -29,7 +32,7 @@
 
   <body>
     <!-- header -->
-    <header class="header fixed w-full">
+    <header class="header fixed w-full primary-bg">
       <div
         class="wrapper-container flex items-center justify-between me-auto ms-auto"
       >
@@ -38,7 +41,9 @@
         </div>
 
         <div class="header__searchbar-wrapper gap-10 relative">
-          <span class="absolute search-icon"><i class="uil uil-search"></i></span>  
+          <span class="absolute search-icon"
+            ><i class="uil uil-search"></i
+          ></span>
           <input
             type="search"
             placeholder="Search for creators,inspirations & projects"
@@ -46,7 +51,7 @@
           />
         </div>
 
-        <div class="create-box flex items-center gap-7">
+        <div class="create-box flex items-center gap-6">
           <button class="primary-btn create__btn font-semibold">Create</button>
 
           <div class="user-profile overflow-hidden rounded-full">
@@ -56,7 +61,37 @@
       </div>
     </header>
 
+    <!-- main -->
+    <main class="main-container">
+      <div class="wrapper-container grid ms-auto me-auto">
+
+        <!-- primary sidebar   -->
+        <aside class="sidebar primary-sidebar">
+          <div class="user__info primary-bg">
+            <div
+              class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap"
+            >
+              <div class="user-profile overflow-hidden rounded-full">
+                <img src="images/profile-1.jpg" />
+              </div>
+
+              <div class="user__info">
+                <p class="user__name text-primary font-semibold">Diana Ayi</p>
+                <p class="text-secondary">@dayi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-nav">
+
+          </div>
+        </aside>
+
+        <article></article>
+
+        <aside></aside>
+      </div>
+    </main>
     
   </body>
-  
 </html>
