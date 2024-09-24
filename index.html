@@ -40,14 +40,14 @@
           <a href="#" class="text-3xl font-bold text-primary">nokoSocial</a>
         </div>
 
-        <div class="header__searchbar-wrapper gap-10 relative">
+        <div class="header__searchbar-wrapper gap-10 relative secondary-bg">
           <span class="absolute search-icon"
             ><i class="uil uil-search"></i
           ></span>
           <input
             type="search"
             placeholder="Search for creators,inspirations & projects"
-            class="header__searchbar"
+            class="header__searchbar font-medium w-full"
           />
         </div>
 
@@ -55,7 +55,7 @@
           <button class="primary-btn create__btn font-semibold">Create</button>
 
           <div class="user-profile overflow-hidden rounded-full">
-            <img src="images/profile-1.jpg" />
+            <img src="assets/images/profile-1.jpg" />
           </div>
         </div>
       </div>
@@ -63,15 +63,17 @@
 
     <!-- main -->
     <main class="main-container">
+
       <div class="wrapper-container grid ms-auto me-auto">
+
         <!-- primary sidebar   -->
-        <aside class="sidebar primary-sidebar">
+        <aside class="sidebar primary-sidebar grid gap-6">
           <div class="user__info primary-bg">
             <div
               class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap"
             >
               <div class="user-profile overflow-hidden rounded-full">
-                <img src="images/profile-1.jpg" />
+                <img src="assets/images/profile-1.jpg" />
               </div>
 
               <div class="user__info">
@@ -81,13 +83,65 @@
             </div>
           </div>
 
-          <div class="sidebar-nav"></div>
+          <div class="sidebar-nav primary-bg overflow-hidden">
+            <ul class="nav__list grid">
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/house.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Home</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/compass.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Explore</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/bell.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Notifications</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/envelope.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Message</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/bookmark.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Bookmark</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/bar-chart-line.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Analytics</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/palette-fill.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Theme</p>
+              </li>
+
+              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+                <span><img src="assets/icons/gear-fill.svg"></img></span>
+                <p class="nav__link font-semibold text-primary">Settings</p>
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="primary-btn font-semibold">Create Post</button>
+
         </aside>
 
-        <article></article>
+        
+        <article>
+
+        </article>
 
         <aside></aside>
       </div>
+
+
+
     </main>
   </body>
 </html>

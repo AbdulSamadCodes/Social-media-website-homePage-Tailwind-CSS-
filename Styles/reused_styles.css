@@ -1,5 +1,7 @@
 .primary-btn {
-  background-color: var(--clr-bg-primarybtn);
+  display:grid;
+  place-content:center;
+  background-color: var(--clr-font-theme);
   color: var(--clr-primarybtn);
   padding: var(--primary-btn-padding);
   border-radius: 2rem;
