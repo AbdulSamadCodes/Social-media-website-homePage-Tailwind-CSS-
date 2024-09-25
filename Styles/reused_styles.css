@@ -6,3 +6,8 @@
   padding: var(--primary-btn-padding);
   border-radius: 2rem;
 }
+
+.user-input {
+  padding: 0.8rem 0rem 0.8rem 5rem;
+  border-radius: 1.6rem;
+}

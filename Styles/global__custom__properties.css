@@ -4,16 +4,16 @@
   --primary-btn-padding: 1rem 3rem;
   --main-container-padding-block:6rem;
 
-  --main-wrapper-gap: 1rem;
-  --main-wrapper-columns: 23% 1fr 23%;
+  --main-wrapper-gap: 1.5rem;
+  --main-wrapper-columns:23% 1fr 23%;
 
   --sidebar-padding-block: 1.3rem;
   --sidebar-padding-inline: 1.5rem;
   --sidebar-radius: 1rem;
 
   /* widths */
-  --wrapper-container-maxwidth: 110rem;
-  --header-searchbar-width: 35rem;
+  --wrapper-container-maxwidth: 115rem;
+  --header-searchbar-width: 40rem;
 
   /* typography */
   --ff-Poppins: "Poppins", sans-serif;
@@ -23,7 +23,8 @@
   --clr-primary-bg: hsl(0, 100%, 100%);
   --clr-secondary-bg:hsl(240, 17%, 94%);
   --clr-text-primary: hsl(0, 0%, 15%);
-  --clr-text-secondary: hsl(240, 5%, 81%);
+  --clr-text-secondary:hsl(240, 10%, 55%)  ;
+  --clr-text-light: hsl(240, 5%, 70%);
 
   --clr-font-theme: hsl(241, 70%, 60%);
   --clr-primarybtn: hsl(250, 72%, 93%);

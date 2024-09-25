@@ -1,147 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responive social media webiste</title>
 
-    <!-- google font link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responive social media webiste</title>
 
-    <!-- iconscout cdn link-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
-    />
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <!-- tailwind css link -->
-    <link rel="stylesheet" href="Styles/output.css" />
+  <!-- iconscout cdn link-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
 
-    <!-- custom css link -->
-    <link rel="stylesheet" href="Styles/global__custom__properties.css" />
-    <link rel="stylesheet" href="Styles/reset.css" />
-    <link rel="stylesheet" href="Styles/reused_styles.css" />
-    <link rel="stylesheet" href="Styles/main__styles.css" />
-    <link rel="stylesheet" href="Styles/custom__utility__classes.css" />
-  </head>
+  <!-- tailwind css link -->
+  <link rel="stylesheet" href="Styles/output.css" />
 
-  <body>
-    <!-- header -->
-    <header class="header fixed w-full primary-bg">
-      <div
-        class="wrapper-container flex items-center justify-between me-auto ms-auto"
-      >
-        <div class="logo">
-          <a href="#" class="text-3xl font-bold text-primary">nokoSocial</a>
-        </div>
+  <!-- custom css link -->
+  <link rel="stylesheet" href="Styles/global__custom__properties.css" />
+  <link rel="stylesheet" href="Styles/reset.css" />
+  <link rel="stylesheet" href="Styles/reused_styles.css" />
+  <link rel="stylesheet" href="Styles/main__styles.css" />
+  <link rel="stylesheet" href="Styles/custom__utility__classes.css" />
+</head>
 
-        <div class="header__searchbar-wrapper gap-10 relative secondary-bg">
-          <span class="absolute search-icon"
-            ><i class="uil uil-search"></i
-          ></span>
-          <input
-            type="search"
-            placeholder="Search for creators,inspirations & projects"
-            class="header__searchbar font-medium w-full"
-          />
-        </div>
+<body>
 
-        <div class="create-box flex items-center gap-6">
-          <button class="primary-btn create__btn font-semibold">Create</button>
+  <!-- header -->
+  <header class="header fixed w-full primary-bg z-10">
+    <div class="wrapper-container flex items-center justify-between me-auto ms-auto">
+      <div class="logo">
+        <a href="#" class="text-3xl font-bold text-primary">nokoSocial</a>
+      </div>
 
-          <div class="user-profile overflow-hidden rounded-full">
-            <img src="assets/images/profile-1.jpg" />
-          </div>
+      <div class="header__searchbar-wrapper gap-10 relative secondary-bg user-input">
+        <span class="absolute search-icon"><i class="uil uil-search"></i></span>
+        <input type="search" placeholder="Search for creators,inspirations & projects"
+          class="header__searchbar font-medium w-full" />
+      </div>
+
+      <div class="create-box flex items-center gap-6">
+        <button class="primary-btn create__btn font-semibold">Create</button>
+
+
+        <div class="user-profile overflow-hidden rounded-full">
+          <img src="assets/images/profile-1.jpg" />
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- main -->
-    <main class="main-container">
+  <!-- main -->
+  <main class="main-container">
+    <div class="wrapper-container grid ms-auto me-auto relative">
 
-      <div class="wrapper-container grid ms-auto me-auto">
+      <!-- primary sidebar   -->
+      <aside class="sidebar primary-sidebar grid gap-6 sticky">
+        <div class="user__info primary-bg">
+          <div class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap">
+            <div class="user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-1.jpg" />
+            </div>
 
-        <!-- primary sidebar   -->
-        <aside class="sidebar primary-sidebar grid gap-6">
-          <div class="user__info primary-bg">
-            <div
-              class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap"
-            >
-              <div class="user-profile overflow-hidden rounded-full">
-                <img src="assets/images/profile-1.jpg" />
-              </div>
-
-              <div class="user__info">
-                <p class="user__name text-primary font-semibold">Diana Ayi</p>
-                <p class="text-secondary">@dayi</p>
-              </div>
+            <div class="user__info">
+              <p class="user__name text-primary font-semibold">Diana Ayi</p>
+              <p class="text-light">@dayi</p>
             </div>
           </div>
+        </div>
 
-          <div class="sidebar-nav primary-bg overflow-hidden">
-            <ul class="nav__list grid">
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/house.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Home</p>
-              </li>
+        <div class="sidebar-nav primary-bg">
+          <ul class="nav__list grid">
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/house.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Home</p>
+            </li>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/compass.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Explore</p>
-              </li>
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/compass.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Explore</p>
+            </li>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/bell.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Notifications</p>
-              </li>
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/bell.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Notifications</p>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/envelope.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Message</p>
-              </li>
+              <!-- notifications dialog -->
+              <div class="notification__wrapper grid primary-bg absolute z-10 gap-6 ">
+                <div class="notification__body flex items-start gap-5">
+                  <div class="notification__user-profile rounded-full overflow-hidden">
+                    <img src="/assets/images/profile-15.jpg">
+                  </div>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/bookmark.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Bookmark</p>
-              </li>
+                  <div class="notification__info">
+                    <p class="text-secondary "><span class="inline text-primary font-bold">
+                        Kate Benjamin
+                      </span>commented on your picture</p>
+                    <time class="text-light uppercase text-sm font-medium">15 hours ago</time>
+                  </div>
+                </div>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/bar-chart-line.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Analytics</p>
-              </li>
+                <div class="notification__body flex items-start gap-5">
+                  <div class="notification__user-profile rounded-full overflow-hidden">
+                    <img src="/assets/images/profile-16.jpg">
+                  </div>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/palette-fill.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Theme</p>
-              </li>
+                  <div class="notification__info">
+                    <p class="text-secondary "><span class="inline text-primary font-bold">
+                        Kirsten stewart
+                      </span>send you a message</p>
+                    <time class="text-light uppercase text-sm font-medium">2 days ago</time>
+                  </div>
+                </div>
 
-              <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-                <span><img src="assets/icons/gear-fill.svg"></img></span>
-                <p class="nav__link font-semibold text-primary">Settings</p>
-              </li>
+                <div class="notification__body flex items-start gap-5">
+                  <div class="notification__user-profile rounded-full overflow-hidden">
+                    <img src="/assets/images/profile-12.jpg">
+                  </div>
 
-            </ul>
+                  <div class="notification__info">
+                    <p class="text-secondary "><span class="inline text-primary font-bold">
+                        Hala Rosie
+                      </span>reacted on your picture</p>
+                    <time class="text-light uppercase text-sm font-medium">15 hours ago</time>
+                  </div>
+                </div>
+
+                <div class="notification__body flex items-start gap-5">
+                  <div class="notification__user-profile rounded-full overflow-hidden">
+                    <img src="/assets/images/profile-14.jpg">
+                  </div>
+
+                  <div class="notification__info">
+                    <p class="text-secondary "><span class="inline text-primary font-bold">
+                        Angel pretty
+                      </span>reacted on your picture</p>
+                    <time class="text-light uppercase text-sm font-medium">
+                      22 hours ago
+                    </time>
+                  </div>
+                </div>
+
+                <div class="notification__body flex items-start gap-5">
+                  <div class="notification__user-profile rounded-full overflow-hidden">
+                    <img src="/assets/images/profile-9.jpg">
+                  </div>
+
+                  <div class="notification__info">
+                    <p class="text-secondary "><span class="inline text-primary font-bold">
+                        Dead monster
+                      </span>disliked your picture</p>
+                    <time class="text-light uppercase text-sm font-medium">
+                      28 hours ago
+                    </time>
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/envelope.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Message</p>
+            </li>
+
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/bookmark.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Bookmark</p>
+            </li>
+
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/bar-chart-line.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Analytics</p>
+            </li>
+
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/palette-fill.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Theme</p>
+            </li>
+
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span><img src="assets/icons/gear-fill.svg"></img></span>
+              <p class="nav__link font-semibold text-primary">Settings</p>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="primary-btn font-semibold create__post-btn">Create Post</button>
+      </aside>
+
+      <!--content section -->
+      <article class="content-section grid gap-6">
+        <div class="stories-wrapper">
+          <div class="stories grid gap-3">
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-1.jpg);">
+              <div class="story__user__profile object-cover overflow-hidden rounded-full">
+                <img src="/assets/images/story-1.jpg">
+              </div>
+              <p class="story__username min-w-fit font-semibold">Your Story</p>
+            </div>
+
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-2.jpg);">
+              <div class="story__user__profile object-cover overflow-hidden rounded-full">
+                <img src="/assets/images/story-2.jpg">
+              </div>
+              <p class="story__username min-w-fit font-semibold">Jessica Rhodes</p>
+            </div>
+
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-3.jpg);">
+              <div class="story__user__profile object-cover overflow-hidden rounded-full">
+                <img src="/assets/images/story-3.jpg">
+              </div>
+              <p class="story__username min-w-fit font-semibold">Lia Wellington
+              </p>
+            </div>
+
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-4.jpg);">
+              <div class="story__user__profile object-cover overflow-hidden rounded-full">
+                <img src="/assets/images/story-4.jpg">
+              </div>
+              <p class="story__username min-w-fit font-semibold">Alexa Darmer</p>
+            </div>
+
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-5.jpg);">
+              <div class="story__user__profile object-cover overflow-hidden rounded-full">
+                <img src="/assets/images/story-5.jpg">
+              </div>
+              <p class="story__username min-w-fit font-semibold">Elsa James</p>
+            </div>
+
+            <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
+              style="background-image:url(assets/images/story-6.jpg);"">
+              <div class=" story__user__profile object-cover overflow-hidden rounded-full">
+              <img src="/assets/images/story-6.jpg">
+            </div>
+            <p class="story__username min-w-fit font-semibold">Kisrten Stewart</p>
           </div>
 
-          <button class="primary-btn font-semibold">Create Post</button>
+        </div>
+    </div>
 
-        </aside>
+    <div class="post-input-wrapper primary-bg user-input relative -z-10">
+      <div class="user-profile overflow-hidden rounded-full absolute">
+        <img src="/assets/images/profile-1.jpg">
+      </div>
 
-        
-        <article>
+      <input type="text" class="w-full post__input" placeholder="What's on your mind? Diana">
 
-        </article>
+      <button class="primary-btn post__btn font-semibold absolute">Post</button>
+    </div>
 
-        <aside></aside>
+    <div class="feeds-wrapper grid gap-6">
+
+      <div class="feed primary-bg grid gap-4">
+
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-3.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">Lana Rose</p>
+
+            <time class="text-secondary feed__time uppercase font-medium">DUBAI, 15 minutes ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-1.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
+      </div>
+
+      <div class="feed primary-bg grid gap-4">
+
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-6.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">Hailey Rose</p>
+
+            <time class="text-secondary feed__time uppercase font-medium">2 hrs ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-2.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
+      </div>
+
+      <div class="feed primary-bg grid gap-4">
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-8.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">Joe Wilson</p>
+
+            <time class="text-secondary feed__time uppercase font-medium">33 days ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-3.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
       </div>
 
 
+      <div class="feed primary-bg grid gap-4">
 
-    </main>
-  </body>
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-10.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">Kirsten stewart</p>
+
+            <time class="text-secondary feed__time uppercase font-medium">DUBAI, 57 minutes ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-4.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
+      </div>
+
+
+      <div class="feed primary-bg grid gap-4">
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-16.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">
+              Scarlet mathews
+            </p>
+
+            <time class="text-secondary feed__time uppercase font-medium">new york,22 minutes ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-6.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
+      </div>
+
+
+      <div class="feed primary-bg grid gap-4">
+
+        <div class="feed__info flex gap-6 items-center">
+          <div class="feed__user-profile overflow-hidden rounded-full">
+            <img src="assets/images/profile-15.jpg">
+          </div>
+
+          <div>
+            <p class="feed__username text-primary font-bold">Martin
+              Cruser
+            </p>
+
+            <time class="text-secondary feed__time uppercase font-medium">3 days ago</time>
+          </div>
+
+        </div>
+
+        <figure class="feed__figure overflow-hidden">
+          <img src="assets/images/feed-7.jpg" class="w-full">
+        </figure>
+
+        <div class="feed__options flex items-center gap-6 mt-4">
+          <a href="#"><img src="assets/icons/heart-fill.svg"></a>
+          <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+          <a href="#"><img src="assets/icons/share.svg"></a>
+          <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
+        </div>
+
+        <div class="wrapper">
+          <div class="feed__likes-info flex gap-4 items-center">
+            <div class="flex">
+              <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
+              <span class="likedby-profile relative  overflow-hidden rounded-full"><img
+                  src="assets/images/profile-6.jpg"></span>
+              <span class="likedby-profile relative overflow-hidden rounded-full"><img
+                  src="assets/images/profile-2.jpg"></span>
+            </div>
+            <p class="likes__description text-secondary font-medium">Liked by <span class="text-primary inline
+              font-semibold cursor-pointer">Ernest
+                Acheiver</span> and <span class="text-primary font-semibold inline
+              cursor-pointer "> 2332 others </span></p>
+          </div>
+
+          <p class="text-secondary font-medium"><span class="text-primary inline font-semibold cursor-pointer">Joe
+              Wilson</span>
+            commented on your picture</p>
+          </p>
+
+          <p class="text-light cursor-pointer">View all 277 comments</p>
+
+        </div>
+      </div>
+    </div>
+
+      </article>
+
+    <!-- secondary sidebar -->
+    <aside class="sidebar secondary-sidebar">
+
+    </aside>
+    </div>
+  </main>
+
+</body>
 </html>
