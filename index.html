@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="Styles/reused_styles.css" />
   <link rel="stylesheet" href="Styles/main__styles.css" />
   <link rel="stylesheet" href="Styles/custom__utility__classes.css" />
+
+  <!-- custom scripts links -->
+  <script src="src/notifications.js" defer></script> 
 </head>
 
 <body>
@@ -45,7 +48,6 @@
       <div class="create-box flex items-center gap-6">
         <button class="primary-btn create__btn font-semibold">Create</button>
 
-
         <div class="user-profile overflow-hidden rounded-full">
           <img src="assets/images/profile-1.jpg" />
         </div>
@@ -58,7 +60,7 @@
     <div class="wrapper-container grid ms-auto me-auto relative">
 
       <!-- primary sidebar   -->
-      <aside class="sidebar primary-sidebar grid gap-6 sticky">
+      <aside class="sidebar primary-sidebar grid gap-6 sticky z-50">
         <div class="user__info primary-bg">
           <div class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap">
             <div class="user-profile overflow-hidden rounded-full">
@@ -72,9 +74,9 @@
           </div>
         </div>
 
-        <div class="sidebar-nav primary-bg">
+        <div class="sidebar-nav primary-bg overflow-hidden" data-sidebar-nav>
           <ul class="nav__list grid">
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex items-center gap-7 cursor-pointer">
               <span><img src="assets/icons/house.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Home</p>
             </li>
@@ -84,12 +86,13 @@
               <p class="nav__link font-semibold text-primary">Explore</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative notifications-link" data-notification-link>
               <span><img src="assets/icons/bell.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Notifications</p>
 
+
               <!-- notifications dialog -->
-              <div class="notification__wrapper grid primary-bg absolute z-40 gap-6 ">
+              <div class="notification__wrapper grid primary-bg absolute gap-6" data-notification-wrapper>
                 <div class="notification__body flex items-start gap-5">
                   <div class="notification__user-profile rounded-full overflow-hidden">
                     <img src="/assets/images/profile-15.jpg">
@@ -159,7 +162,6 @@
                   </div>
                 </div>
               </div>
-              
             </li>
 
             <li class="nav__item flex items-center gap-7 cursor-pointer relative">
@@ -195,6 +197,7 @@
       <!--content section -->
       <article class="content-section grid gap-6">
         <div class="stories-wrapper">
+
           <div class="stories grid gap-3">
             <div class="story__wrapper flex flex-col items-start  justify-between bg-center bg-cover"
               style="background-image:url(assets/images/story-1.jpg);">
@@ -288,7 +291,7 @@
 
         <div class="wrapper">
           <div class="feed__likes-info flex gap-4 items-center">
-            <div class="flex isolate">
+            <div class="flex">
               <span class="likedby-profile overflow-hidden rounded-full"><img src="assets/images/profile-13.jpg"></span>
               <span class="likedby-profile relative   overflow-hidden rounded-full"><img
                   src="assets/images/profile-6.jpg"></span>
@@ -542,6 +545,7 @@
         <div class="feed__options flex items-center gap-6 mt-4">
           <a href="#"><img src="assets/icons/heart-fill.svg"></a>
           <a href="#"><img src="assets/icons/chat-dots-fill.svg"></a>
+
           <a href="#"><img src="assets/icons/share.svg"></a>
           <a href="#" class="ms-auto"><img src="assets/icons/pin.svg"></a>
         </div>
@@ -576,8 +580,9 @@
 
     <!-- secondary sidebar -->
     <aside class="sidebar secondary-sidebar">
-
     </aside>
+
+
     </div>
   </main>
   
