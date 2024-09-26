@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="Styles/custom__utility__classes.css" />
 
   <!-- custom scripts links -->
-  <script src="src/notifications.js" defer></script> 
+  <script src="src/interactions.js" defer></script>
 </head>
 
 <body>
@@ -58,7 +58,6 @@
   <!-- main -->
   <main class="main-container">
     <div class="wrapper-container grid ms-auto me-auto relative">
-
       <!-- primary sidebar   -->
       <aside class="sidebar primary-sidebar grid gap-6 sticky z-50">
         <div class="user__info primary-bg">
@@ -74,9 +73,9 @@
           </div>
         </div>
 
-        <div class="sidebar-nav primary-bg overflow-hidden" data-sidebar-nav>
+        <div class="sidebar-nav primary-bg overflow-hidden relative" data-sidebar-nav>
           <ul class="nav__list grid">
-            <li class="nav__item flex items-center gap-7 cursor-pointer">
+            <li class="nav__item flex items-center gap-7 relative cursor-pointer special">
               <span><img src="assets/icons/house.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Home</p>
             </li>
@@ -86,7 +85,8 @@
               <p class="nav__link font-semibold text-primary">Explore</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative notifications-link" data-notification-link>
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative notifications-link"
+              data-notification-link>
               <span><img src="assets/icons/bell.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Notifications</p>
 
@@ -194,7 +194,7 @@
         <button class="primary-btn font-semibold create__post-btn">Create Post</button>
       </aside>
 
-      <!--content section -->
+      <!-- content section -->
       <article class="content-section grid gap-6">
         <div class="stories-wrapper">
 
@@ -576,15 +576,110 @@
       </div>
     </div>
 
-      </article>
+     </article>
 
     <!-- secondary sidebar -->
-    <aside class="sidebar secondary-sidebar">
-    </aside>
+    <aside class="sidebar secondary-sidebar grid gap-6">
+      <div class="messages-wrapper primary-bg grid gap-7">
 
+        <div class="flex items-center justify-between">
+          <p class="font-semibold">Messages</p>
+
+          <span><img src="assets/icons/envelope.svg"></span>
+        </div>
+
+        <div class="messages__input-wrapper secondary-bg relative">
+          <input type="search" placeholder="Search messages">
+          <span class="absolute search-icon"><img src="assets/icons/search.svg"></span>
+        </div>
+
+        <div class="tabs flex justify-between">
+          <a
+            class="tab show relative  pb-5  text-center overflow-hidden font-semibold text-primary cursor-pointer">Primary</a>
+          <a
+            class="tab relative  pb-5  text-center overflow-hidden font-semibold text-primary cursor-pointer">Secondary</a>
+          <a
+            class="tab relative  pb-5  text-center overflow-hidden font-semibold  cursor-pointer request-tab">Requests(11)</a>
+        </div>
+
+        <div class="messages grid gap-12">
+          <div class="message__wrapper flex gap-6">
+            <div class="message__user-profile rounded-full overflow-hidden">
+              <img src="/assets/images/profile-18.jpg">
+            </div>
+
+            <div class="message__body">
+              <p class="message-sender capitalize text-primary font-semibold">Adama Quist</p>
+
+              <p class="text-secondary font-medium message-text">Just woke up bruh</p>
+            </div>
+
+          </div>
+
+          <div class="message__wrapper flex gap-6">
+            <div class="message__user-profile rounded-full overflow-hidden">
+              <img src="/assets/images/profile-15.jpg">
+            </div>
+
+            <div class="message__body">
+              <p class="message-sender capitalize text-primary font-semibold">Martin diaz</p>
+
+              <p class="text-primary font-medium message-text">Hi! How are you</p>
+            </div>
+
+          </div>
+
+          <div class="message__wrapper flex gap-6">
+            <div class="message__user-profile rounded-full overflow-hidden">
+              <img src="/assets/images/profile-13.jpg">
+            </div>
+
+            <div class="message__body">
+              <p class="message-sender capitalize text-primary font-semibold">
+                Chris williams
+              </p>
+
+              <p class="text-primary font-medium message-text">Just woke up bruh</p>
+            </div>
+
+          </div>
+
+          <div class="message__wrapper flex gap-6">
+            <div class="message__user-profile rounded-full overflow-hidden">
+              <img src="/assets/images/profile-10.jpg">
+            </div>
+
+            <div class="message__body">
+              <p class="message-sender capitalize text-primary font-semibold">
+                Liana dior
+              </p>
+
+              <p class="text-primary font-medium message-text">Lets's meet today</p>
+            </div>
+
+          </div>
+
+          <div class="message__wrapper flex gap-6">
+            <div class="message__user-profile rounded-full overflow-hidden">
+              <img src="/assets/images/profile-7.jpg">
+            </div>
+
+            <div class="message__body">
+              <p class="message-sender capitalize text-primary font-semibold">
+                Christine silver
+              </p>
+
+              <p class="text-primary font-medium message-text">I am on it!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </aside>
 
     </div>
   </main>
-  
+
 </body>
 </html>

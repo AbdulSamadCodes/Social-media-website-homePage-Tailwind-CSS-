@@ -95,7 +95,7 @@
   padding-inline: 3rem 0.7rem;
 }
 
-.nav__item::after {
+.nav__item::before {
   top: 0;
   left: 0;
   bottom: 0;
@@ -107,15 +107,15 @@
   transition: background-color 200ms ease, width 200ms ease;
 }
 
-.nav__item:first-child {
+/* .nav__item:first-child {
   border-radius: calc(var(--sidebar-radius));
-}
+} */
 
 .nav__item:is(:hover, :focus, :focus-visible) {
   background-color: var(--clr-secondary-bg);
 }
 
-.nav__item:is(:hover, :focus, :focus-visible)::after {
+.nav__item:is(:hover, :focus, :focus-visible)::before {
   width: 0.6rem;
 }
 
@@ -214,4 +214,72 @@
 
 .likes__description {
   margin-inline-start: calc(var(--left-pos1) + var(--left-pos2) + 1rem);
+}
+
+/* secondary sidebar */
+.messages-wrapper {
+  padding: calc(var(--sidebar-padding-block) + 0.5rem)
+    var(--sidebar-padding-inline);
+  border-radius: var(--sidebar-radius);
+}
+
+.messages__input-wrapper {
+  --padding: 1.2rem 0 1.2rem 4rem;
+
+  padding: var(--padding);
+  border-radius: 1.6rem;
+}
+
+.search-icon {
+  --left-pos: 1rem;
+  --top-pos: 50%;
+
+  left: var(--left-pos);
+  top: var(--top-pos);
+  transform: translate(0, -50%);
+}
+
+.tabs {
+  border-block-end: 2px solid var(--clr-secondary-bg);
+}
+
+.tab {
+  font-size: 1.3rem;
+}
+
+.tab::before {
+  width: 100%;
+  height: 0.3rem;
+  bottom: 0;
+  left: -100%;
+  background-color: var(--clr-text-primary);
+  border-radius: 0.8rem;
+
+  transition: left 300ms ease;
+}
+
+.tab.show::before {
+  left: 0;
+}
+
+.request-tab {
+  color: var(--clr-font-theme);
+}
+
+.request-tab::before {
+  background-color: var(--clr-font-theme);
+}
+
+.message__user-profile {
+  --width: 4.5rem;
+
+  width: var(--width);
+}
+
+.message-sender {
+  font-size: calc(var(--fs-body) + 0.1rem);
+}
+
+.message-text {
+  font-size: calc(var(--fs-body) - 0.1rem);
 }

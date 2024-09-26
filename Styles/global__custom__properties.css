@@ -12,10 +12,12 @@
   --sidebar-radius: 1rem;
 
   /* widths */
-  --wrapper-container-maxwidth: 115rem;
+  --wrapper-container-maxwidth: 110rem;
   --header-searchbar-width: 40rem;
 
   /* typography */
+  --fs-body:1.4rem;
+
   --ff-Poppins: "Poppins", sans-serif;
 
   /* colors */
