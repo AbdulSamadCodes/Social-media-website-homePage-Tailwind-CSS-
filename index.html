@@ -40,7 +40,7 @@
       </div>
 
       <div class="header__searchbar-wrapper gap-10 relative secondary-bg user-input">
-        <span class="absolute search-icon"><i class="uil uil-search"></i></span>
+        <span class="absolute search-icon"><img src="assets/icons/search.svg"></span>
         <input type="search" placeholder="Search for creators,inspirations & projects"
           class="header__searchbar font-medium w-full" />
       </div>
@@ -61,7 +61,7 @@
       <!-- primary sidebar   -->
       <aside class="sidebar primary-sidebar grid gap-6 sticky z-30">
         <div class="user__info primary-bg">
-          <div class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap">
+          <div class="user-info-wrapper flex items-center gap-6 shrink-0 -0 flex-wrap">
             <div class="user-profile overflow-hidden rounded-full">
               <img src="assets/images/profile-1.jpg" />
             </div>
@@ -75,19 +75,19 @@
 
         <div class="sidebar-nav primary-bg overflow-hidden relative" data-sidebar-nav>
           <ul class="nav__list grid">
-            <li class="nav__item flex flex-wrap items-center gap-7 relative cursor-pointer special">
-              <span><img src="assets/icons/house.svg"></img></span>
+            <li class="nav__item flex  items-center gap-7 relative cursor-pointer special">
+              <span class="shrink-0"><img src="assets/icons/house.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Home</p>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/compass.svg"></img></span>
+            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+              <span class="shrink-0"><img src="assets/icons/compass.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Explore</p>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative notifications-link"
+            <li class="nav__item flex  items-center gap-7 cursor-pointer relative notifications-link"
               data-notification-link>
-              <span><img src="assets/icons/bell.svg"></img></span>
+              <span class="shrink-0"><img src="assets/icons/bell.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Notifications</p>
 
 
@@ -164,28 +164,28 @@
               </div>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/envelope.svg"></img></span>
+            <li class="nav__item flex   items-center gap-7 cursor-pointer relative">
+              <span class="shrink-0"><img src="assets/icons/envelope.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Message</p>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/bookmark.svg"></img></span>
+            <li class="nav__item flex  items-center gap-7 cursor-pointer relative">
+              <span class="shrink-0"><img src="assets/icons/bookmark.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Bookmark</p>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/bar-chart-line.svg"></img></span>
+            <li class="nav__item flex   items-center gap-7 cursor-pointer relative">
+              <span class="shrink-0"><img src="assets/icons/bar-chart-line.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Analytics</p>
             </li>
 
-            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/palette-fill.svg"></img></span>
+            <li class="nav__item flex  flex-wrap items-center gap-7 cursor-pointer relative">
+              <span class="shrink-0"><img src="assets/icons/palette-fill.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Theme</p>
             </li>
 
             <li class="nav__item flex items-center gap-7 cursor-pointer relative">
-              <span><img src="assets/icons/gear-fill.svg"></img></span>
+              <span class="shrink-0"><img src="assets/icons/gear-fill.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Settings</p>
             </li>
           </ul>
@@ -591,9 +591,9 @@
         <div class="messages__input-wrapper secondary-bg relative">
           <input type="search" placeholder="Search messages">
           <span class="absolute search-icon"><img src="assets/icons/search.svg"></span>
-        </div>
+        </div>  
 
-        <div class="tabs flex justify-between">
+        <div class="tabs flex flex-wrap justify-between">
           <a
             class="tab show relative  pb-5  text-center overflow-hidden font-semibold text-primary cursor-pointer">Primary</a>
           <a
