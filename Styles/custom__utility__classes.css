@@ -10,6 +10,10 @@
   color:var(--clr-text-light);
 }
 
+.text-gray {
+  color:var(--clr-text-gray);
+}
+
 .primary-bg {
   background-color:var(--clr-primary-bg);
 }

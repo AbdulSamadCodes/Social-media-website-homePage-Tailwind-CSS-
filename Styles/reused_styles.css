@@ -1,8 +1,17 @@
 .primary-btn {
-  display:grid;
-  place-content:center;
+  display: grid;
+  place-content: center;
   background-color: var(--clr-font-theme);
   color: var(--clr-primarybtn);
-  padding: var(--primary-btn-padding);
+  padding: var(--btn-padding);
+  border-radius: 2rem;
+}
+
+.secondary-btn {
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-text-secondary);
+  color: var(--clr-text-primary);
+  padding: var(--btn-padding);
   border-radius: 2rem;
 }

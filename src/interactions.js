@@ -1,7 +1,6 @@
 //function to handle notifications
-function notificationHandler() {
+function notificationsHandler() {
   const notificationWrapper = document.querySelector("[data-notification-wrapper]");
-  const notificationLink = document.querySelector("[data-notification-link]");
   const sidebarNav = document.querySelector("[data-sidebar-nav]");
 
   document.addEventListener("click", (event) => {
@@ -15,6 +14,8 @@ function notificationHandler() {
     notificationWrapper.classList.remove("show");
   });
 }
+
+notificationsHandler();
 
 //function to handle messages tabs
 function tabsHandler() {

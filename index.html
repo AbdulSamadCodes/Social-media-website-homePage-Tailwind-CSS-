@@ -30,10 +30,10 @@
   <script src="src/interactions.js" defer></script>
 </head>
 
-<body>  
+<body>
 
   <!-- header -->
-  <header class="header fixed w-full primary-bg z-10">
+  <header class="header fixed w-full primary-bg z-50">
     <div class="wrapper-container flex items-center justify-between me-auto ms-auto">
       <div class="logo">
         <a href="#" class="text-3xl font-bold text-primary">nokoSocial</a>
@@ -59,7 +59,7 @@
   <main class="main-container">
     <div class="wrapper-container grid ms-auto me-auto relative">
       <!-- primary sidebar   -->
-      <aside class="sidebar primary-sidebar grid gap-6 sticky z-50">
+      <aside class="sidebar primary-sidebar grid gap-6 sticky z-30">
         <div class="user__info primary-bg">
           <div class="user-info-wrapper flex items-center gap-6 shrink-0 flex-wrap">
             <div class="user-profile overflow-hidden rounded-full">
@@ -75,17 +75,17 @@
 
         <div class="sidebar-nav primary-bg overflow-hidden relative" data-sidebar-nav>
           <ul class="nav__list grid">
-            <li class="nav__item flex items-center gap-7 relative cursor-pointer special">
+            <li class="nav__item flex flex-wrap items-center gap-7 relative cursor-pointer special">
               <span><img src="assets/icons/house.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Home</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
               <span><img src="assets/icons/compass.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Explore</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative notifications-link"
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative notifications-link"
               data-notification-link>
               <span><img src="assets/icons/bell.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Notifications</p>
@@ -164,22 +164,22 @@
               </div>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
               <span><img src="assets/icons/envelope.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Message</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
               <span><img src="assets/icons/bookmark.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Bookmark</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
               <span><img src="assets/icons/bar-chart-line.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Analytics</p>
             </li>
 
-            <li class="nav__item flex items-center gap-7 cursor-pointer relative">
+            <li class="nav__item flex flex-wrap items-center gap-7 cursor-pointer relative">
               <span><img src="assets/icons/palette-fill.svg"></img></span>
               <p class="nav__link font-semibold text-primary">Theme</p>
             </li>
@@ -576,10 +576,10 @@
       </div>
     </div>
 
-     </article>
+      </article>
 
-    <!-- secondary sidebar -->
-    <aside class="sidebar secondary-sidebar grid gap-6">
+      <!-- secondary sidebar -->
+      <aside class="sidebar secondary-sidebar grid gap-6">
       <div class="messages-wrapper primary-bg grid gap-7">
 
         <div class="flex items-center justify-between">
@@ -599,7 +599,7 @@
           <a
             class="tab relative  pb-5  text-center overflow-hidden font-semibold text-primary cursor-pointer">Secondary</a>
           <a
-            class="tab relative  pb-5  text-center overflow-hidden font-semibold  cursor-pointer request-tab">Requests(11)</a>
+            class="tab relative  pb-5  text-center overflow-hidden font-semibold  cursor-pointer request-tab">Requests(5)</a>
         </div>
 
         <div class="messages grid gap-12">
@@ -676,7 +676,111 @@
         </div>
       </div>
 
-    </aside>
+      <p class="requests__title text-gray
+       font-bold">Requests</p>
+
+      <div class="requests-wrapper grid gap-4">
+        <div class="request-wrapper primary-bg gap-6 grid">
+          <div class="flex gap-6">
+            <div class="request__user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-12.jpg">
+            </div>
+
+            <div class="request-sendername">
+              <p class="text-primary font-semibold">Haja Yaqoub</p>
+              <p class="text-gray font-medium">8 mutual friends</p>
+            </div>
+          </div>
+
+          <div class="requests__btn-group flex gap-4">
+            <button class="primary-btn font-semibold">Accept</button>
+
+            <button class="secondary-btn secondary-bg font-semibold">Decline</button>
+          </div>
+        </div>
+
+        <div class="request-wrapper primary-bg gap-6 grid">
+          <div class="flex gap-6">
+            <div class="request__user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-14.jpg">
+            </div>
+
+            <div>
+              <p class="text-primary font-semibold request-sendername capitalize">Angle Girl</p>
+              <p class="text-gray font-medium">2 mutual friends</p>
+            </div>
+          </div>
+
+          <div class="requests__btn-group flex gap-4">
+            <button class="primary-btn font-semibold">Accept</button>
+
+            <button class="secondary-btn secondary-bg font-semibold">Decline</button>
+          </div>
+        </div>
+
+
+        <div class="request-wrapper primary-bg gap-6 grid">
+          <div class="flex gap-6">
+            <div class="request__user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-10.jpg">
+            </div>
+
+            <div>
+              <p class="text-primary font-semibold request-sendername capitalize">Pretty Christie</p>
+              <p class="text-gray font-medium">12 mutual friends</p>
+            </div>
+          </div>
+
+          <div class="requests__btn-group flex gap-4">
+            <button class="primary-btn font-semibold">Accept</button>
+
+            <button class="secondary-btn secondary-bg font-semibold">Decline</button>
+          </div>
+        </div>
+
+        <div class="request-wrapper primary-bg gap-6 grid">
+          <div class="flex gap-6">
+            <div class="request__user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-8.jpg">
+            </div>
+
+            <div>
+              <p class="text-primary font-semibold request-sendername capitalize">Chris Mario</p>
+              <p class="text-gray font-medium">12 mutual friends</p>
+            </div>
+          </div>
+
+          <div class="requests__btn-group flex gap-4">
+            <button class="primary-btn font-semibold">Accept</button>
+
+            <button class="secondary-btn secondary-bg font-semibold">Decline</button>
+          </div>
+        </div>
+
+
+        <div class="request-wrapper primary-bg gap-6 grid">
+          <div class="flex gap-6">
+            <div class="request__user-profile overflow-hidden rounded-full">
+              <img src="assets/images/profile-7.jpg">
+            </div>
+
+            <div>
+              <p class="text-primary font-semibold request-sendername capitalize">Christine Michelle</p>
+              <p class="text-gray font-medium">6 mutual friends</p>
+            </div>
+          </div>
+
+          <div class="requests__btn-group flex gap-4">
+            <button class="primary-btn font-semibold">Accept</button>
+
+            <button class="secondary-btn secondary-bg font-semibold">Decline</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      </aside>
 
     </div>
   </main>

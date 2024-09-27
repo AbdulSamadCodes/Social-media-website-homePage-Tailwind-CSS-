@@ -1,18 +1,18 @@
 :root {
   /* spacings */
   --wrapper-container-padding: 1rem 2rem;
-  --primary-btn-padding: 1rem 3rem;
+  --btn-padding: 0.8rem 3rem;
   --main-container-padding-block:6rem;
 
   --main-wrapper-gap: 1.5rem;
-  --main-wrapper-columns:23% 1fr 23%;
+  --main-wrapper-columns:0.4fr 1fr 0.4fr;
 
   --sidebar-padding-block: 1.3rem;
   --sidebar-padding-inline: 1.5rem;
   --sidebar-radius: 1rem;
 
   /* widths */
-  --wrapper-container-maxwidth: 110rem;
+  --wrapper-container-maxwidth: 114rem;
   --header-searchbar-width: 40rem;
 
   /* typography */
@@ -25,8 +25,9 @@
   --clr-primary-bg: hsl(0, 100%, 100%);
   --clr-secondary-bg:hsl(240, 17%, 94%);
   --clr-text-primary: hsl(0, 0%, 15%);
-  --clr-text-secondary:hsl(240, 10%, 55%)  ;
+  --clr-text-secondary:hsl(240, 5%, 80%)  ;
   --clr-text-light: hsl(240, 5%, 70%);
+  --clr-text-gray:hsl(0,0%,60%);
 
   --clr-font-theme: hsl(241, 70%, 60%);
   --clr-primarybtn: hsl(250, 72%, 93%);
